@@ -7,6 +7,7 @@ import backtype.storm.topology.TopologyBuilder;
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
+        Database db = new Database();
         TopologyBuilder builder = new TopologyBuilder();
         Config conf = new Config();
         conf.setDebug(true);
